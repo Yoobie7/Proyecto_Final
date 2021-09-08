@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
+body{
+  background: pink;
+  margin:0 auto;
+  padding:0;
+  text-align:center;
+}
+#parrafo{
+  font-size: 20px;
+  font-family: monospace;
+}
+#logo{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 50px;
+    float: left;
+    margin:auto;
+    border-right: 1px solid palevioletred ;
+}
+#barra {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF8BEC; 
+  }
+  
+  .navegacion {
+    float: left;
+  }
+  
+  .navegacion a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  li a:hover {
+    background-color: palevioletred;
+  }
+h2{
+  text-align:center;
+  background-color: tomato;
+  border: solid 35px tomato;
+  color: white;
+  font-family:'Racing Sans One', cursive;
+  font-size: 35px;
+  text-shadow:0 2px 2px #0c0e50;
+  margin-top: 10px;
+}
+.youtube_videos{
+  list-style:none;
+  margin:0 auto;
+  display:block;
+  padding:0;
+}
+.youtube_videos .youtube{
+  display:inline-block;
+  margin-bottom:1em;
+  margin-right:0.5em;
+  margin-left:0.5em;
+  margin-top:0;
+  
+}
+.youtube,.thumb{
+  width:380px;
+  height:250px;
+  cursor:pointer;
+  position:relative;
+  -webkit-box-shadow:0 0.5px 2px #1D242B;
+  -moz-box-shadow:0 0.5px 2px #1D242B;
+  box-shadow:0 0.5px 2px #1D242B;
+}
+.youtube_video{
+  width:385px;
+  height:250px;
+}
+.thumb,.youtube_video{
+  padding:5px;
+  background:#34495e;
+  border:0;
+  outline:0;
+}
+.youtube:after{
+  content:"Disfruta de este video";
+  position:absolute;
+  top:5px;
+  left:5px;
+  width:370px;
+  height:240px;
+  padding:0;
+  margin:0;
+  padding:5px;
+  background: rgb(255, 192, 203, 0.65);
+  text-align:center;
+  line-height:250px;
+  font-family:'Racing Sans One', cursive;
+  color: transparent;
+  -webkit-transition:all 0.8s ease;
+  -moz-transition:all 0.8s ease;
+  -o-transition:all 0.8s ease;
+  transition:all 0.8s ease;
+}
+.youtube:hover:after{
+  top:110px;
+  left:110px;
+  width:165px;
+  height:40px;
+  line-height:40px;
+  background: pink;
+  -webkit-transition:all 0.8s ease;
+  -moz-transition:all 0.8s ease;
+  -o-transition:all 0.8s ease;
+  transition:all 0.8s ease;
+  color: black;
+}
+
+
+@media (min-width:980px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:767px) {}
+@media (min-width:768px) and (max-width:979px) {}

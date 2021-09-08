@@ -1,0 +1,448 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    background-color: grey; 
+    color: white; 
+    border: solid 14px; 
+    border-color: grey;
+    text-align: center; 
+    font-style: inherit;
+}
+
+#encabezado {
+    width: 1348px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.subtemas {
+    justify-content: flex-start; 
+    font-size: 26px; 
+    color: indianred;
+    margin-bottom: 0%;
+}
+
+.contenido {
+    font-size: 27px; 
+    text-align: justify;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+.miembros {
+    width: 500px;
+    float: left;
+    margin-right: 10px;
+}
+
+#paginapie {
+    width: 1348px; 
+    height: 300px;
+    object-fit: cover;
+}
+
+#masinformacion {
+    color: rebeccapurple;
+}
+
+.link {
+ margin-left: 85px; 
+ text-decoration: none;
+ color: orangered;   
+}
+
+.responsive{
+    margin-top: 10px;
+}
+#logo{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 50px;
+    float: left;
+    margin:auto;
+    border-right: 1px solid palevioletred ;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF8BEC; 
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  li a:hover {
+    background-color: palevioletred;
+  }
+
+@media screen and (min-width:280px) and (max-width:370px) {
+    #logo{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 100px;
+        float: right;
+        margin:auto;
+    }
+    li a {
+        display: block;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    .responsive{
+     font-size: 25px;
+}
+#encabezado{
+display: none;
+}
+.subtemas{
+    font-size: 24px;
+    text-align: center;
+}
+.contenido{
+    font-size: 5;
+    text-align: justify;
+}
+#bts{
+    width: 280px;
+    display: block;
+    margin: auto;
+}
+.miembros{
+    width: 200px;
+    display: block;
+    margin: auto;
+    float: none;
+    object-position: bottom;
+}
+#paginapie{
+    display: none;
+}
+#masinformacion{
+    font-size: 18px;
+    text-align: center;
+}
+#espacio{
+    display: none;
+}
+.link{
+    font-size: 13px;
+    justify-content: space-between;
+    display: flex;
+    color: orangered;
+    margin-left: 20px;
+}
+}
+
+@media screen and (min-width: 371px) and (max-width: 425px) {
+    #logo{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 100px;
+        float: right;
+        margin:auto;
+    }
+    li a {
+        display: block;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        padding-right: 30px;
+        padding-left: 30px;
+      } 
+    .responsive{
+    font-size: 27px;
+   }
+   #encabezado{
+   display: none;
+   }
+   .subtemas{
+       font-size: 27px;
+       text-align: center;
+   }
+   .contenido{
+       font-size: 10;
+       text-align: justify;
+   }
+   #bts{
+       width: 350px;
+       display: block;
+       margin: auto;
+   }
+   .miembros{
+       width: 320px;
+       display: block;
+       margin: auto;
+       float: none;
+   }
+   #paginapie{
+       display: none;
+   }
+   #masinformacion{
+       font-size: 19px;
+       text-align: center;
+   }
+   #espacio{
+       display: none;
+   }
+   .link{
+       font-size: 15px;
+       justify-content: space-between;
+       display: flex;
+       color: orangered;
+   }
+}
+
+@media screen and (min-width: 426px) and (max-width: 600px) {
+    #logo{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 100px;
+        float: left;
+        margin:auto;
+    }
+    li a {
+        display: block;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    .responsive{
+    font-size: 30px;
+   }
+   #encabezado{
+   display: none;
+   }
+   .subtemas{
+       font-size: 30px;
+       text-align: center;
+   }
+   .contenido{
+       font-size: 18;
+       text-align: justify;
+   }
+   #bts{
+       width: 390px;
+       display: block;
+       margin: auto;
+   }
+   .miembros{
+       width: 370px;
+       display: block;
+       margin: auto;
+       float: none;
+   }
+   #paginapie{
+       display: none;
+   }
+   #masinformacion{
+       font-size: 21px;
+       text-align: center;
+   }
+   #espacio{
+       display: none;
+   }
+   .link{
+       font-size: 18px;
+       justify-content: space-between;
+       display: flex;
+       color: orangered;
+   }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .responsive{
+    font-size: 35px;
+   }
+   #encabezado{
+   width: 100%; 
+   height: 150px;
+   }
+   .subtemas{
+       font-size: 38px;
+       text-align: justify;
+   }
+   .contenido{
+       font-size: 30;
+       text-align: justify;
+   }
+   #bts{
+       width: 520px;
+       display: block;
+       margin: auto;
+   }
+   .miembros{
+       width: 530px;
+       display: block;
+       margin: auto;
+       float: none;
+   }
+   #paginapie{
+    width: 100%; 
+    height: 150px;
+   }
+   #masinformacion{
+       font-size: 32px;
+       text-align: justify;
+   }
+   #espacio{
+       display: none;
+   }
+   .link{
+       font-size: 24px;
+       justify-content: space-between;
+       display: flex;
+       color: orangered;
+   }
+}
+
+@media screen and (min-width: 801px) and (max-width: 999px) {
+    .responsive{
+    font-size: 50px;
+   }
+   #encabezado{
+    width: 100%; 
+    height: 180px;
+    }
+    .subtemas{
+        font-size: 52px;
+        text-align: justify;
+    }
+    .contenido{
+        font-size: 50;
+        text-align: justify;
+}
+#bts{
+    width: 720px;
+    display: block;
+    margin: auto;
+}
+.miembros{
+    width: 700px;
+    display: block;
+    margin: auto;
+    float: none;
+}
+#paginapie{
+    width: 100%; 
+    height: 180px;
+}
+#masinformacion{
+    font-size: 50px;
+    text-align: justify;
+}
+#piedepagina{
+font-size: 18px;    
+}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1999px) {
+    .responsive{
+    font-size: 70px;
+   }
+   #encabezado{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    }
+    .subtemas{
+        font-size: 63px;
+        text-align: justify;
+    }
+    #bts{
+    width: 830px;
+    display: block;
+    margin: auto;
+    }
+    .miembros{
+    width: 460px;
+    display: block;
+    margin: auto;
+    margin-right: 15px;
+    }
+    #paginapie{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    }
+    #masinformacion{
+    font-size: 50px;
+    text-align: justify;
+    }
+    #piedepagina{
+    font-size: 40px; 
+    }
+    .link{
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+    .responsive{
+    font-size: 100px;
+   }
+   #encabezado{
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover;
+    }
+    .subtemas{
+        font-size: 93px;
+        text-align: justify;
+    }
+    .contenido{
+        font-size: 60px;
+    }
+    #bts{
+    width: 2040px;
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+    }
+    .miembros{
+    width: 1060px;
+    display: block;
+    margin: auto;
+    }
+    #paginapie{
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover;
+    }
+    #masinformacion{
+    font-size: 100px;
+    text-align: justify;
+    }
+    #piedepagina{
+    font-size: 100px; 
+    }
+    .link{
+        margin-left: 75px;
+    }
+}

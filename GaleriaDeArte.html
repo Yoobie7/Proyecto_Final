@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilogaleria.css">
+    <title>Galería de Arte</title>
+</head>
+  <body>
+      <div>
+        <nav>
+            <ul id="barra">
+            <img id="logo" src="logoo.png" alt="Logo">
+            <li class="navegacion"><a href="ProyectoWeb.html">Inicio</a></li>
+            <li class="navegacion"><a href="GaleriaDeArte.html">Galería de Arte</a></li>
+            <li class="navegacion"><a href="Proposito.html">Propósito</a></li>
+            </ul>  
+        </nav>
+      <header>
+        <h2>Fantástico contenido de BTS</h2>
+      </header>
+    </div>
+
+    <p id="parrafo">En realidad, a los chicos de BTS les gusta mucho la famosa caricatura de Pokémon, por eso, 
+      puedes cosultar algunos de sus datos básicos aquí, como recomendación, el Pokémon favorito de NamJoon es Bulbasaur.</p>
+
+  <div>
+    <input id="mipokemon" type="text">
+    <button onclick="getPokemon()">Obten tus datos aquí :D</button>
+    <p><b>Consultar un Pokémon</b></p>
+    <p id="nombre">Nombre:</p>
+    <p id="peso">Peso:</p>
+    <p id="altura">Altura:</p>
+    <img src="" id="imgPokemon" alt="Imagen de Pokémon">
+  </div>
+    
+    <ul class="youtube_videos">
+      <li class="youtube" id="ipRsWagvx_k">Disfrutalos más en V-Live.</li>
+      <li class="youtube" id="mQEGPegvnuM">Observa como graban sus MV'S.</li>
+      <li class="youtube" id="0bh_B7Q1iIQ">Sigue mirandolo en Youtube.</li>
+      <li class="youtube" id="EdY6wnLsetQ">Un gran canal de habla inglesa (videos limitados con subtitulos).</li>
+      <li class="youtube" id="QtqG16sxqMY">Disfrutalos en V-Live (hacen vivo de forma aleatoria, sin días en especifico).</li>
+      <li class="youtube" id="xgBih4C7Lbw">Los BangTang Bombs son geniales.</li>
+      <li class="youtube" id="4HoEW9-gGTE">Una canción poco conocida.</li>
+      <li class="youtube" id="KKxWfiI_n0c">Una presentación adorable, en el evento de Disney.</li>
+    </ul>
+
+<script>
+  let url = "https://pokeapi.co/api/v2/pokemon/";
+
+function getPokemon() {
+    let pokemon = document.getElementById("mipokemon").value;
+    pokemon = pokemon.toLowerCase()
+    console.log(url + pokemon)
+    fetch(url + pokemon).then(function (response) {
+        return response.json()
+    }).then(function (data) {
+        console.log(data)
+        nombre = document.getElementById("nombre");
+        nombre.innerHTML = data["name"]
+
+        peso = document.getElementById("peso");
+        peso.innerHTML = data["weight"]
+
+        altura = document.getElementById("altura");
+        altura.innerHTML = data["height"]
+
+        pokeimg = document.getElementById("imgPokemon");
+        pokeimg.src = data["sprites"]["front_default"]
+    }).catch(function (error) {
+        alert("El nombre no es correcto")
+    })
+}
+        
+var videos = document.querySelectorAll(".youtube");  
+for (var i=0; i<videos.length; i++) {
+  var youtube = videos[i];
+  getVideos(youtube);
+}
+
+function getVideos(el){
+  var img = document.createElement("img");
+  img.setAttribute('src', 'http://i.ytimg.com/vi/'+el.id+'/hqdefault.jpg');
+  img.setAttribute('class', 'thumb');
+  var video = document.createElement("div");
+  video.setAttribute("class","video_here");  
+  el.appendChild(img);
+  el.appendChild(video);
+
+  el.addEventListener('click',function(){ 
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute('class','youtube_video');
+    iframe.setAttribute('src','https://www.youtube.com/embed/'+
+    this.id +'?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1'); 
+    this.parentNode.replaceChild(iframe, this);
+  },false);  
+}
+    </script>
+  </body>
+</html>

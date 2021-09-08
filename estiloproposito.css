@@ -1,0 +1,57 @@
+body{
+    background-color: pink;
+}
+#logo{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 50px;
+    float: left;
+    margin:auto;
+    border-right: 1px solid palevioletred ;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF8BEC; 
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  li a:hover {
+    background-color: palevioletred;
+  }
+#titulo{
+    background-color: salmon;
+    color: rgb(80, 95, 110);
+    border: solid 27px salmon;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 10px;
+}
+#historia{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 30px; 
+    text-align: justify;
+}
+#letragrande{
+    font-size: 80px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
